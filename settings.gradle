@@ -2,3 +2,5 @@ rootProject.name = pName
 include 'core', 'testing'
 project(':core').name = 'osm4j-pbf'
 project(':testing').name = 'osm4j-pbf-testing'
+include ':osm4j-core'
+project(':osm4j-core').projectDir = new File(settingsDir, '../osm4j-core')
